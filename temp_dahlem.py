@@ -2,7 +2,7 @@ import csv
 from datetime import datetime
 import matplotlib.pyplot as plt
 
-with open("produkt_klima_tag_19500101_20211231_00403.txt") as file:
+with open("data/produkt_klima_tag_19500101_20211231_00403.txt") as file:
     reader = csv.reader(file,delimiter=';')
     header_row = next(reader)
     for index, header in enumerate(header_row):
