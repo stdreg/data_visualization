@@ -1,2 +1,4 @@
 /dv_env
 /virtual_enviroment.txt
+/data
+*.pyc
