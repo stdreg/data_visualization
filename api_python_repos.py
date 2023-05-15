@@ -11,7 +11,14 @@ print(f"Total Repos: {response['total_count']}")
 repos = response['items']
 print(f"Repos received: {len(repos)}")
 
-repo = repos[0]
-print(f"Keys per Repo: {len(repo.keys())}")
-for key in repo.keys():
-    print(key)
+
+print("\nSelected Infos about the first five repositorys:")
+for repo in repos[0:10]:
+    print(f"\nName: {repo['name']}")
+    print(f"Owner: {repo['owner']['login']}")
+    print(f"Stars: {repo['stargazers_count']}")
+    print(f"Repository: {repo['html_url']}")
+    print(f"Created: {repo['created_at']}")
+    print(f"Updated: {repo['updated_at']}")
+    print(f"Description: {repo['description']}")
+
